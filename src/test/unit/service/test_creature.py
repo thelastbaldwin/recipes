@@ -1,5 +1,7 @@
 from model.creature import Creature
 from service import creature as code
+from errors import Missing
+import pytest
 
 sample = Creature(name="Yeti",
              aka="Abominable Snowman",
@@ -16,5 +18,5 @@ def test_get_exists():
     assert resp == sample
 
 def test_get_missing():
-    resp = code.get_one("boxturtle")
-    assert resp is None
+    with pytest.raises(Missing):
+        code.get_one("boxturtle")
