@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from model.user import User
-import src.fake.user as service
+import fake.user as service
 
 router = APIRouter(prefix = "/user")
 

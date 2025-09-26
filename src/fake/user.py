@@ -2,11 +2,11 @@ from model.user import User
 
 # fake data, replaced in Chapter 10 by a real database and SQL
 _users = [
-    User(id=0,
+    User(user_id=0,
          email="user1@test.com",
          username="user1",
          hash="123456"),
-    User(id=1,
+    User(user_id=1,
          email="user2@test.com",
          username="user2",
          hash="123456"),

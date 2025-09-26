@@ -1,5 +1,5 @@
 from model.recipe import Recipe
-import src.fake.recipe as data
+import fake.recipe as data
 
 def get_all() -> list[Recipe]:
     return data.get_all()

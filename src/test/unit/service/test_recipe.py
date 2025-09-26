@@ -1,7 +1,7 @@
 from model.recipe import Recipe
 from service import recipe as code
 
-sample = Recipe(id = "0",
+sample = Recipe(recipe_id = "0",
            owner_id = "0",
            name="Grilled Cheese", 
            notes="Good for a quick snack",

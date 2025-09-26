@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 
 class Recipe(BaseModel):
-    id: int
+    recipe_id: int
     owner_id: int
     name: str
     ingredients: str
@@ -9,4 +9,4 @@ class Recipe(BaseModel):
     steps: str
     serves: int
     prep_time: int
-    cooK_time: int
+    cook_time: int

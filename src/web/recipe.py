@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from model.recipe import Recipe
-import src.fake.recipe as service
+import fake.recipe as service
 
 router = APIRouter(prefix = "/recipe")
 

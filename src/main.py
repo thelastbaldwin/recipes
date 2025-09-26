@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from src.web import recipe
-from src.web import user
+from web import recipe
+from web import user
 
 
 app = FastAPI()
