@@ -1,11 +1,12 @@
 from fastapi import FastAPI
-from web import explorer, creature
+from src.web import recipe
+from src.web import user
 
 
 app = FastAPI()
 
-app.include_router(explorer.router)
-app.include_router(creature.router)
+app.include_router(user.router)
+app.include_router(recipe.router)
 
 
 if __name__ == "__main__":
