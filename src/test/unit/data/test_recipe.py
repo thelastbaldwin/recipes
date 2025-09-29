@@ -1,6 +1,6 @@
 from model.user import User
 from model.recipe import Recipe
-from service import recipe, user
+from data import recipe, user
 from errors import Missing
 import pytest
 

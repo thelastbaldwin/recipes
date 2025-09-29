@@ -1,5 +1,5 @@
 from model.recipe import Recipe
-import fake.recipe as data
+import data.recipe as data
 
 def get_all() -> list[Recipe]:
     return data.get_all()
@@ -11,7 +11,7 @@ def create(recipe: Recipe) -> Recipe:
     return data.create(recipe)
 
 def modify(id, recipe: Recipe) -> Recipe:
-    return data.modify(id, Recipe)
+    return data.modify(id, recipe)
 
-def delete(id, recipe: Recipe) -> bool:
+def delete(id) -> bool:
     return data.delete(id)
