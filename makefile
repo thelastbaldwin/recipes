@@ -1,4 +1,6 @@
 dev:
 	RECIPE_SQLITE_DB=recipes.db python src/main.py
+
+test: export RECIPE_SQLITE_DB=:memory:
 test:
-	RECIPE_SQLITE_DB=":memory:" pytest -v src/test;
+	pytest -v src/test;
